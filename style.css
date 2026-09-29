@@ -1,0 +1,40 @@
+.{
+    margin: opx;
+    padding: 0px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "header header"
+    "sidebar content"   
+    "footer footer";
+
+}
+.title {
+    grid-area: title;
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area:sidebar;
+}
+.content {
+    grid-area: content;
+}
+.footer {
+    grid-area:footer;
+}
+.grid div:nth-child(even) {
+    background-color: blue;
+}
+.grid div:nth-child(odd) {
+    background-color: red;
+}
+
+@media screen and (min-width:736px) {
+
+}
