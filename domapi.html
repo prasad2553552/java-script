@@ -1,0 +1,220 @@
+<!--html DOM API-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>html  DOM API </title>
+</head>
+<body>
+    <h1 id="heading">hello world</h1>
+    <button onclick="changeText()">click Me</button>
+    <script>
+        function changeText() {
+            document.getElementById("heading").textContent=
+            "welcome to javascript DOM API"
+        }
+    </script>
+</body>
+</html>
+
+<!-- selecting HTML ELEMENT-->
+ <!--getElementById()-->
+ <!--<!DOCTYPE html>
+ <html>
+<head>
+<title>getElementById</title>
+</head>
+<body>
+    <h1 id="title">original Heading</h1>
+    <script>
+        const element = document.getElementById("title");
+        console.log(element);
+        console.log(element.textContent);
+    </script>
+</body>
+ </html>
+
+ <!-- querySelector()-->
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <title>querySelector</title>
+</head>
+<body>
+    <p class="message">First Paragraph</p>
+    <p class="message">Second paragraph</p>
+    <script>
+        const element1 = document.querySelector(".message")
+        console.log(element1.textContent);
+    </script>
+</body>
+</html>
+
+<!--Accessing Element Content-->
+<!--text content-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Text Content</title>
+</head>
+<body>
+    <h1 id="heading">Hello Student</h1>
+    <script>
+        const heading = document.getElementById("heading")
+        console.log(heading.textContent);
+    </script>
+</body>
+</html>
+
+<!--innerHTML-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<div id="content">
+    <h2>hello</h2>
+    <p>welcome to javascript</p>
+</div>
+  <script>
+    const content = document.getElementById("content");
+    console.log(content.innerHTML)
+  </script>
+</body>
+</html>
+
+<!--changing content-->
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="demo">Old Text</p>
+
+    <button id="changeBtn">Change Text</button>
+
+    <script>
+        const paragraph = document.getElementById("demo");
+        const button = document.getElementById("changeBtn");
+
+        button.addEventListener("click", function () {
+            paragraph.textContent = "New Text";
+        });
+    </script>
+
+</body>
+</html>
+
+<!--Accessing Element Attributes-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Element ATTRIBUTES</title>
+</head>
+<body>
+    <img src="data:image/jpeg;base64,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" alt="profile photo">
+   <br><br>
+    <a href="https://www.w3schools.com/js/js_htmldom_methods.asp">visit website</a>
+   <br><br>
+    <input type="text" id="username" placeholder="Enter username">
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <img id="photo" src="c:\\Users\\RAM\\Downloads\\download (1).jfif" alt="profile">
+   <script>
+    const image = document.getElementById("photo")
+    console.log(image.getAttribute("src"));
+   </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Get input Placeholder</title>
+</head>
+<body>
+    <input id="username" type="text" placeholder="Enter your name">
+    <script>
+        const input = document.getElementById("user")
+        console.log(input.getAttribute("placeholder"))
+    </script>
+</body>
+</html>-->
+
+<!----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Direct property Access</title>
+</head>
+<body>
+    <input id="username" type="text">
+    <script>
+        const input1 = document.getElementById("username")
+        console.log(input.type)
+        console.log(input.id);
+    </script>
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <a id="link" href="https://www.w3schools.com/css/default.asp">vist</a>
+    <script>
+        const link = document.getElementById("link")
+        console.log(link.href)
+    </script>
+</body>
+</html>-->
+
+<!--Changing Element Attributes-->
+<!--change image source-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <img id="photo" src="c:\Users\RAM\Downloads\download.jfif" alt="old image">
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        function changeImage() {
+            document.getElementById("photo").setAttribute("src","new.jpd")
+        }
+    </script>
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        hello <b>world</b>
+    </div>
+    <script>
+        const elemet2 = document.getElementById("demo")
+        console.log(elemet2.textContent);
+        console.log(elemet2.innerHTML);
+        console.log(elemet2.innerText);
+    </script>
+</body>
+</html>
+
+
+<DOCTYPE html>

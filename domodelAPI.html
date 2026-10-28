@@ -1,0 +1,395 @@
+<!--DOM METHOD-->
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementById Example</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+
+    <script>
+        let element = document.getElementById("heading");
+
+        console.log(element);
+    </script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>documet</title>
+</head>
+<body>
+<h1 id="heading">Welcome</h1>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+    function changeText() {
+        document.getElementById("heading").textContent = "Hello Charan!";
+    }
+</script>
+</body>
+</html>-->
+
+<!--querySelector()-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">javaScript</h1>
+    <script>
+        let element1 = document.querySelector("#title");
+        console.log(element1);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="message">first message</p>
+    <p class="message">second message</p>
+    <script>
+        let element = document.querySelector(".message")
+        console.log(element.textContent)
+    </script>
+</body>
+</html>-->
+
+
+
+<!--createElement()-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let paragraph =document.createElement("p");
+        paragraph.textContent = "This is a new paragraph";
+        document.body.append(paragraph);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="container"></div>
+   <script>
+    let button = document.createElement("button");
+    button.textContent="click me";
+    document.getElementById("container").append(button);
+   </script> 
+</body>
+</html>-->
+
+<!--addEventListener()-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <script>
+        let button = document.getElementById("btn")
+        button.addEventListener("click", function() {
+            alert("Button Clicked!");
+        })
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading">welcome</h2>
+    <button id="btn">Change Text</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("heading").textContent = "hello javascript!"
+        })
+    </script>
+</body>
+</html>-->
+
+<!--DOM PROPERTIES-->
+<!-- TEXT CONTENT-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello World</h1>
+    <script>
+        let heading = document.getElementById("title")
+        console.log(heading.textContent)
+    </script>
+</body>
+</html>-->
+
+<!--innerHTML-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <h2>Hello</h2>
+        <p>welcome to javascript</p>
+    </div>
+    <script>
+        let box = document.getElementById("box")
+        console.log(box.innerHTML)
+    </script>
+</body>
+</html>-->
+
+<!--style-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello World</h1>
+
+<script>
+    let heading = document.getElementById("heading");
+
+    heading.style.color = "red";
+</script>
+</body>
+</html>-->
+
+<!--Background Color-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">Welcome</div>
+
+<script>
+    let box = document.getElementById("box");
+
+    box.style.backgroundColor = "yellow";
+    box.style.padding = "20px";
+    box.style.fontSize = "24px";
+</script>
+</body>
+</html>-->
+
+<!--DOM Attributes-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello World</h1>
+    <script>
+        let element = document.getElementById("heading")
+        console.log(element.getAttribute("id"))
+    </script>
+</body>
+</html>-->
+
+
+
+<!--setAttribute()-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="oldHeding">Hello</h1>
+    <script>
+        let heading = document.getElementById("oldHeading")
+        heading.setAttribute("id","newHeading");
+        console.log(heading.id)
+    </script>
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myimage" alt="Example image" width=""200>
+    <script>
+        let image = document.getElementById("myImage")
+        image.setAttribute("src","c:\\Users\\RAM\\Downloads\\download.jfif")
+    </script>
+</body>
+</html>-->
+
+
+<!--DOM Manipulation-->
+<!--append()-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        Hello
+    </div>
+    <script>
+        let container = document.getElementById("container")
+        container.append("world")
+    </script>
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+    <li>Apple</li>
+</ul>
+<script>
+    let list =document.getElementById("list");
+    let item = document.createElement("li")
+    item.textContent = "Banana"
+    list.append(item);
+</script>
+</body>
+</html>-->
+
+
+
+<!--appendChiled()-->
+<!--paragraph-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id =container></div>
+    <script>
+        let paragraph = document.createElement("p")
+        paragraph.textContent="Hello World";
+        document.getElementById("container").appendChild(paragraph)
+    </script>
+</body>
+</html>-->
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>HTML</li>
+    </ul>
+    <script>
+        let item = document.createElement("li")
+        item.textContent = "javascript"
+        document.getElementById("list").appendChild(item)
+    </script>
+</body>
+</html>-->
+
+
+<!--prepend()-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">world</div>
+    <script>
+        document.getElementById("container").prepend("hello")
+    </script>
+</body>
+</html>-->
+
+<!--remove()-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="message">This is a message</p>
+    <button id="btn">Remove</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function() {
+            document.getElementById("message").remove();
+        })
+    </script>
+</body>
+</html>

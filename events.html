@@ -1,0 +1,334 @@
+<!--Click Event-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button onclick="showMessage()">Click Me</button>
+    <script>
+        function showMessage() {
+            alert("Hello! Welcome to javascript")
+        }
+    </script>
+</body>
+</html>-->
+
+<!--Mouse Over Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOUSE OVER EVENT</title>
+</head>
+<body>
+    <h2 onmouseover="changeText(this)">
+        Move Your mouse here
+    </h2>
+    <script>
+        function changeText(element) {
+            element.innerHTML = "Mouse Event Triggered!"
+        }
+    </script>
+</body>
+</html>-->
+
+<!--Double Click Event-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click Event</title>
+</head>
+<body> 
+    <button id="btn">Double Click Me</button>
+
+<script>
+document.getElementById("btn").addEventListener("dblclick", function() {
+    alert("You double-clicked the button!");
+});
+</script>
+</body>
+</html>-->
+
+<!--Mouse Down Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseDown</title>
+</head>
+<body>
+    <button id="btn">Press Me</button>
+    <script>
+        document.getElementById("btn").addEventListener("mousedown", function() {
+            this.textContent="Mouse Pressed"
+        })
+    </script>
+</body>
+</html>-->
+
+<!--Mouse Up Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Press and Release</button>
+
+<script>
+document.getElementById("btn").addEventListener("mouseup", function() {
+    this.textContent = "Mouse Released";
+});
+</script>
+</body>
+</html>-->
+
+<!--Mouse Movie Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse Move</h1>
+    <p id="position">Move your mouse here.</p>
+
+<script>
+document.addEventListener("mousemove", function(event) {
+    document.getElementById("position").textContent =
+        "X: " + event.clientX + ", Y: " + event.clientY;
+});
+</script>
+</body>
+</html>-->
+
+<!--Mouse Over Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">Move Mouse Here</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("mouseover", function() {
+    box.style.backgroundColor = "blue";
+    box.style.color="red"
+});
+</script>
+</body>
+</html>-->
+
+Mouse Out Event(mouseout)
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">Move Mouse Here</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("mouseout", function() {
+    box.style.backgroundColor = "lightblue";
+});
+</script>
+</body>
+</html>-->
+
+<!--Mouse Enter Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">Enter This Box</div>
+
+<script>
+const box1 = document.getElementById("box1");
+
+box1.addEventListener("mouseenter", function() {
+    box.style.backgroundColor = "lightgreen";
+});
+</script>
+</body>
+</html>-->
+
+
+<!--Mouse Leave Event-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">Leave This Box</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.addEventListener("mouseleave", function() {
+    box.style.backgroundColor = "lightcoral";
+});
+</script>
+</body>
+</html>-->
+
+<!--Right Click Event(contextmenu)-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Right-click on this text.</p>
+
+<script>
+document.getElementById("text").addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    alert("Right-click detected!");
+});
+</script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        #box {
+            width: 300px;
+            height: 180px;
+            background-color: lightblue;
+            border: 2px solid black;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Mouse Events</h1>
+
+    <button id="clickBtn">Click Me</button>
+    <button id="doubleBtn">Double Click Me</button>
+
+    <div id="box">Move Mouse Here</div>
+
+    <p id="output">Event information appears here.</p>
+    <p id="position">Mouse Position: X: 0, Y: 0</p>
+
+    <script>
+        const box = document.getElementById("box");
+        const output = document.getElementById("output");
+        const position = document.getElementById("position");
+
+        // 1. Click event
+        document.getElementById("clickBtn")
+            .addEventListener("click", function() {
+                output.textContent = "Click Event Triggered!";
+            });
+
+        // 2. Double-click event
+        document.getElementById("doubleBtn")
+            .addEventListener("dblclick", function() {
+                output.textContent = "Double Click Event Triggered!";
+            });
+
+        // 3. Mouse down event
+        box.addEventListener("mousedown", function() {
+            output.textContent = "Mouse Button Pressed!";
+            box.style.backgroundColor = "orange";
+        });
+
+        // 4. Mouse up event
+        box.addEventListener("mouseup", function() {
+            output.textContent = "Mouse Button Released!";
+            box.style.backgroundColor = "lightblue";
+        });
+
+        // 5. Mouse enter event
+        box.addEventListener("mouseenter", function() {
+            output.textContent = "Mouse Entered the Box!";
+            box.style.borderColor = "green";
+        });
+
+        // 6. Mouse leave event
+        box.addEventListener("mouseleave", function() {
+            output.textContent = "Mouse Left the Box!";
+            box.style.borderColor = "black";
+        });
+
+        // 7. Mouse move event
+        box.addEventListener("mousemove", function(event) {
+            position.textContent =
+                "Mouse Position: X: " + event.clientX +
+                ", Y: " + event.clientY;
+        });
+
+        // 8. Right-click event
+        box.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+            output.textContent = "Right-Click Event Triggered!";
+        });
+    </script>
+
+</body>
+</html>
+
