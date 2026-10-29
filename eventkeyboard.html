@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+
+
+<h2>JavaScript Keyboard Events</h2>
+
+<p>Press any key on your keyboard.</p>
+
+<h3 id="result">Your key will appear here</h3>
+
+<script>
+    document.addEventListener("keydown", function(event) {
+        document.getElementById("result").textContent =
+            "You pressed: " + event.key;
+    });
+</script>
+
+
+</body>
+</html>
+
+
+<!--Keydown Even-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keydown Example</title>
+</head>
+<body>
+
+
+<h2>Press Enter Key</h2>
+
+<input type="text" id="username" placeholder="Enter your name">
+
+<p id="message"></p>
+
+<script>
+    document.getElementById("username")
+        .addEventListener("keydown", function(event) {
+
+            if (event.key === "Enter") {
+                document.getElementById("message").textContent =
+                    "Hello! You pressed Enter.";
+            }
+        });
+</script>
+
+</body>
+</html>
+
+<!--Keyup Event-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyup Example</title>
+</head>
+<body>
+
+
+<h2>Type Something</h2>
+
+<input type="text" id="myInput" placeholder="Start typing...">
+
+<p id="output"></p>
+
+<script>
+    const input = document.getElementById("myInput");
+    const output = document.getElementById("output");
+
+    input.addEventListener("keyup", function() {
+        output.textContent = "You typed: " + input.value;
+    });
+</script>
+
+
+</body>
+</html>
+
+
+<!--Escape key-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Escape Key Example</h2>
+    <p id="result">Press Escape</p>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                document.getElementById("result").textContent =
+                    "Escape key pressed!";
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+<!--Manage Events – Event Handling-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Keyboard Counter</h2>
+    <p>Use ArrowUp and ArrowDown keys.</p>
+
+    <h3 id="count">0</h3>
+
+    <script>
+        let count = 0;
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "ArrowUp") {
+                count++;
+            } else if (event.key === "ArrowDown") {
+                count--;
+            } else {
+                return;
+            }
+
+            document.getElementById("count").textContent = count;
+        });
+    </script>
+
+</body>
+</html>
+

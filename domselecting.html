@@ -1,0 +1,111 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Old Text</h1>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        function changeText() {
+            let element = document.getElementById("heading")
+            element.textContent="New Text"
+        }
+    </script>
+</body>
+</html>-->
+
+<!---select all paragraphs-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+    <p>third paragraph</p>
+    <script>
+        let paragraphs = document.getElementByIdTagName("p");
+        console.log(paragraphs.length);
+        console.log(paragraphs[0].textContent);
+        console.log(paragraphs[1].textContent);
+        console.log(paragraphs[2].textContent);
+    </script>
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Apple</p>
+    <p>Banana</p>
+    <p>Orange</p>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            let paragraphs = document.getElementsByTagName("p");
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color = "blue";
+            }
+        }
+    </script>
+
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+    <p class="message">Hello</p>
+    <p class="message">Welcome</p>
+    <p class="message">Good Morning</p>
+
+    <script>
+        let elements = document.getElementsByClassName("message");
+
+        console.log(elements.length);
+
+        console.log(elements[0].textContent);
+        console.log(elements[1].textContent);
+        console.log(elements[2].textContent);
+    </script>
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">HTML</h1>
+    <h1 class="title">CSS</h1>
+    <h1 class="title">javaScript</h1>
+    <button onclick="changeStyle()">Change Style</button>
+    <script>
+        function changeStyle() {
+            let titles = document.getElementsByClassName("title")
+            for (let i = 0; i < titles.length; i++ ){
+                titles[i].style.color = "red";
+                titles[i].style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>
